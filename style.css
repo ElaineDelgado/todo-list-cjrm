@@ -1,0 +1,62 @@
+body {
+  background-color: #222;
+  min-height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;  
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+
+form.form-add-todo {
+  margin: 20px 0 50px 0;
+}
+
+input[type=text],
+input[type=text]:focus {
+  color: #fff;
+  border: none;
+  background: rgba(119, 119, 119, 0.2);
+  min-width: 350px;
+}
+
+label {
+  font-size: .9rem;
+  color: #8031ff;
+}
+
+.todos-container li.show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6d12ff;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 15px;
+  min-width: 350px;
+}
+
+i[data-delete] {
+  cursor: pointer;
+}
+
+.todos-container li.hidden {
+  display: none;
+}
